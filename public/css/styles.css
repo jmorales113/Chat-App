@@ -55,6 +55,7 @@ button {
     cursor: pointer;
     padding: 12px;
     background: mediumturquoise;
+    font-weight: bold;
     border: none;
     color: white;
     font-size: 16px;
@@ -134,9 +135,10 @@ button:disabled {
 }
 
 .message-name {
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 16px;
     margin-right: 8px;
+    color: mediumturquoise;
 }
 
 .message-time {
@@ -146,6 +148,15 @@ button:disabled {
 
 .message a {
     color: #0070CC;
+}
+
+#message-text {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    color: black;
 }
 
 /* Message Composition Styles */
@@ -179,7 +190,7 @@ button:disabled {
 
 .room-title {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 22px;
     background: mediumturquoise;
     padding: 24px;   
@@ -188,10 +199,14 @@ button:disabled {
 .list-title {
     text-decoration: underline;
     font-style: italic;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
     margin-bottom: 4px;
     padding: 12px 24px 0 24px;
+}
+
+li {
+    font-weight: bold;
 }
 
 .users {
@@ -247,6 +262,25 @@ button:disabled {
     #message-form {
         display: block;
         width: 150px;
+    }
+
+    #message-button {
+        margin-top: 5px;
+    }
+
+    #location-button {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .compose {
+        display: block;
+    }
+
+    #message-form {
+        display: block;
+        width: 120px;
     }
 
     #message-button {
