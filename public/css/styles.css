@@ -18,9 +18,23 @@ body {
     line-height: 1.4;
     color: #333333;
     font-family: Helvetica, Arial, sans-serif;
+    overflow-y: hidden;
 }
 
-h1 {
+#header {
+    background: #333744;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+#main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: mediumturquoise
+}
+
+#form-title {
     margin-bottom: 16px;
 }
 
@@ -62,7 +76,7 @@ button:disabled {
 .form {
     background: #333744;
     width: 100vw;
-    height: 100vh;   
+    height: 100vh;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,4 +198,62 @@ button:disabled {
     list-style-type: none;
     font-weight: 300;
     padding: 12px 24px 0 24px;
+}
+
+@media screen and (max-width: 414px) {
+    .compose {
+        display: block;
+    }
+
+    #message-form {
+        display: block;
+        width: 200px;
+    }
+
+    #message-button {
+        margin-top: 5px;
+    }
+
+    #location-button {
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .compose {
+        display: block;
+    }
+
+    #message-form {
+        display: block;
+        width: 150px;
+    }
+
+    #message-button {
+        margin-top: 5px;
+    }
+
+    #location-button {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .compose {
+        display: block;
+    }
+
+    #message-form {
+        display: block;
+        width: 150px;
+    }
+
+    #message-button {
+        margin-top: 5px;
+    }
+
+    #location-button {
+        margin-top: 5px;
+    }
 }
