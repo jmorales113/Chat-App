@@ -164,13 +164,16 @@ button:disabled {
 /* Chat Sidebar Styles */
 
 .room-title {
+    text-transform: uppercase;
     font-weight: 400;
     font-size: 22px;
-    background: #2c2f3a;
+    background: mediumturquoise;
     padding: 24px;   
 }
 
 .list-title {
+    text-decoration: underline;
+    font-style: italic;
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 4px;
