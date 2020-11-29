@@ -40,11 +40,6 @@ const removeUser = (id) => {
 const getUser = (id) => {
     const findUser = users.find((user) => user.id === id)
 
-    if (!findUser) {
-        return {
-            error: "User does not exist"
-        }
-    }
     return findUser
 }
 
